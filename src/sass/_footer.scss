@@ -1,0 +1,11 @@
+/* footer -------------------------- */
+footer {
+	background: $red;
+    color: $white;
+    @include font-smooth;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 90px 0;
+    text-align: center;
+    @include sizing;
+}

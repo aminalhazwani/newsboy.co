@@ -1,0 +1,38 @@
+/* header -------------------------- */
+header {
+    padding: 104px 0;
+    font: 24px/36px $fontCaption;
+    color: $black;
+    @include bgsize;
+    @include sizing;
+    h1 {
+        font-size: 50px;
+        font-weight: $f-heavy;
+        margin-bottom: 24px;
+        @include media-query(tabl-and-up) {
+            display: inline-block;
+            vertical-align: top;
+            margin-bottom: 0;
+            margin-top: 36px;
+        }
+    }
+    p {
+        @include media-query(tabl-and-up) {
+            margin-top: 24px;
+        }
+    }
+}
+.header-logo {
+    width: 100px;
+    @include media-query(tabl-and-up) {
+        display: inline-block;
+        margin-right: 24px;
+    }
+}
+.header-img {
+    float: right;
+}
+.header-wrapper {
+    padding-top: 87px;
+    max-width: 655px
+}
