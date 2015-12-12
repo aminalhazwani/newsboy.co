@@ -1,25 +1,46 @@
 /* header -------------------------- */
 header {
-    padding: 104px 0;
-    font: 24px/36px $fontCaption;
-    color: $black;
-    @include bgsize;
-    @include sizing;
+    position: relative;
+    @include media-query(tabl-and-down) {
+        padding: 58px 0 256px 0;
+    }
+    padding: 116px 0;
+    font: 24px/30px $fontCaption;
+    background: $orange;
+    color: $blue;
     h1 {
         font-size: 50px;
-        font-weight: $f-heavy;
+        font-weight: $f-bold;
         margin-bottom: 24px;
         @include media-query(tabl-and-up) {
             display: inline-block;
             vertical-align: top;
             margin-bottom: 0;
-            margin-top: 36px;
+            margin-top: 20px;
+        }
+        @include media-query(desk) {
+            margin-top: 32px;
         }
     }
     p {
         @include media-query(tabl-and-up) {
             margin-top: 24px;
+            margin-left: 10%;
+            max-width: 80%;
         }
+        @include media-query(desk) {
+            max-width: 90%;
+            margin-left: 5%;
+            text-align: center;
+        }
+    }
+    max-height: 450px;
+    overflow: hidden;
+    @include media-query (lap) {
+        max-height: 600px;
+    }
+    @include media-query(desk) {
+        max-height: 100%;
     }
 }
 .header-logo {
@@ -29,10 +50,47 @@ header {
         margin-right: 24px;
     }
 }
-.header-img {
-    float: right;
+.header-video_wrapper {
+    float: none;
+    background-image: url(/assets/images/iphone-frame.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 24px;
+    height: 480px;
+    @include media-query(tabl-and-up) {
+        height: 580px;
+    }
+    @include media-query(desk) {
+        height: 600px;
+        margin-top: 0;
+        float: right;
+        margin-right: 5%;
+    }
+}
+.header-video {
+    background: transparent;
+    margin-top: 76px;
+    width: 184px;
+    @include media-query(tabl-and-up) {
+        margin-top: 91px;
+        width: 224px;
+    }
+    @include media-query(desk) {
+        margin: 102px 38px 0;
+        height: 397px;
+    }
 }
 .header-wrapper {
-    padding-top: 87px;
-    max-width: 655px
+    padding-top: 160px;
+    @include media-query(desk) {
+        float: left;
+        width: calc(100% - 300px - 10%);
+    }
+    .soon {
+        margin-top: 48px;
+    }
+}
+.header-wrapper_logo {
+    text-align: center;
 }

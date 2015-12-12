@@ -4,7 +4,7 @@
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="assets/images/favicon.png">
     <title>Newsboy</title>
     <meta name="description" content="A free responsive HTML 5 template with a clean style.">
     <meta name="keywords" content="free template, html 5, responsive, clean, scss">
@@ -12,6 +12,7 @@
     <link rel="apple-touch-icon" sizes="72x72" href="images/touch/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/touch/apple-touch-icon-114x114.png">
     <link rel="apple-touch-icon" sizes="144x144" href="images/touch/apple-touch-icon-144x144.png">
+    <meta name="robots" content="noindex, nofollow">
     <meta property="og:title" content="">
     <meta property="og:description" content="">
     <meta property="og:url" content="">
@@ -28,11 +29,18 @@
     <div class="main">
         <header>
             <div class="wrap">
-                <img src="upload/iphone.png" height="532" width="252" alt="" class="header-img">
                 <div class="header-wrapper">
-                    <img class="header-logo" src="assets/images/newsboy-logo.svg">
-                    <h1>Newsboy</h1>
-                    <p>With a smartphone and the right app, you can find any spot on Earth. But the best navigation apps do a lot more. Look out for that speed trap.</p>
+                    <div class="header-wrapper_logo">
+                        <img class="header-logo" src="assets/images/newsboy-logo.svg">
+                        <h1>Newsboy</h1>
+                    </div>
+                    <p>Newsboy is a mobile application that helps newsrooms and journalists give online visibility to their stories with a seamless and intuitive step by step interface.</p>
+                    <p class="soon">Coming soon on the App Store!</p>
+                </div>
+                <div class="header-video_wrapper">
+                    <video class="header-video" autoplay loop>
+                        <source src="assets/videos/newsboy.mp4" type="video/mp4" />
+                    </video>
                 </div>
                 <!-- /.header-wrapper -->
             </div>
@@ -43,24 +51,24 @@
                 <div class="wrap">
                     <div class="promo-wrapper clearfix">
                         <div class="promo-column">
-                            <img src="upload/pin.png" height="32" width="24" alt="">
+                            <img src="assets/images/icon-write.svg" height="35" width="35" alt="write">
                             <h5>Write</h5>
-                            <p>Write your great long-form story.</p>
+                            <p>Work on your great news story.</p>
                         </div>
                         <div class="promo-column">
-                            <img src="upload/settings.png" height="32" width="33" alt="">
+                            <img src="assets/images/icon-create.svg" height="35" width="35" alt="create">
                             <h5>Create</h5>
-                            <p>Get ready to create your Newsboy. You will finish in the blink of an eye.</p>
+                            <p>Start creating your Newsboy. You will finish in the blink of an eye.</p>
                         </div>
                         <div class="promo-column">
-                            <img src="upload/easy.png" height="32" width="34" alt="">
+                            <img src="assets/images/icon-condividi.svg" height="35" width="35" alt="condividi">
                             <h5>Share</h5>
-                            <p>Share your story Newboy on many platfomr as you prefer.</p>
+                            <p>Give visibility to your Newsboy on the most important social networks.</p>
                         </div>
                         <div class="promo-column">
-                            <img src="upload/saturn.png" height="32" width="32" alt="">
+                            <img src="assets/images/icon-read.svg" height="35" width="35" alt="read">
                             <h5>Read</h5>
-                            <p>Readers will discover your wrinting and they will enjoy it.</p>
+                            <p>Let readers discover and enjoy your work.</p>
                         </div>
                     </div>
                 </div>
@@ -69,99 +77,260 @@
             <!-- /.promo clearfix -->
             <div class="video clearfix">
                 <div class="wrap">
-                    <div class="video-title">Explore. Walk &amp; Ride in action</div>
-                    <div class="video-subtitle">Just try it for yourself</div>
+                    <div class="video-title">Create. Text, Photo &amp; Video.</div>
+                    <div class="video-subtitle">Get ready to share your awesome stories.</div>
                     <div class="video-block">
-                       <iframe src="//player.vimeo.com/video/106575373?portrait=0" width="814" height="458" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        <video src="assets/videos/newsboy-promo.mp4" controls></video>
                     </div>
-                    <div class="video-share-wrapper clearfix">
-                        <ul class="social-list clearfix">
-                            <li class="video-share-title">Share it with your friends:</li>
-                            <li><a href="#" class="social-twitter">via <strong>Twitter</strong></a></li>
-                            <li><a href="#" class="social-facebook">via <strong>Facebook</strong></a></li>
-                            <li><a href="#" class="social-google">via <strong>Google+</strong></a></li>
+                </div>
+                <!-- /.wrap -->
+            </div>
+            <!-- /.videos clearfix -->
+            <div class="simple clearfix">
+                <div class="wrap">
+                    <div class="simple-content">
+                        <h3>Enjoy the experience</h3>
+                        <ul>
+                            <li class="clearfix"><span>•&nbsp;&nbsp;&nbsp;Vertical timeline</span></li>
+                            <li class="clearfix"><span>•&nbsp;&nbsp;&nbsp;Selection of quality fonts</span></li>
+                            <li class="clearfix"><span>•&nbsp;&nbsp;&nbsp;Attractive color palettes</span></li>
+                            <li class="clearfix"><span>•&nbsp;&nbsp;&nbsp;Instant preview</span></li>
+                            <li class="clearfix"><span>•&nbsp;&nbsp;&nbsp;Social networks integration</span></li>
                         </ul>
                     </div>
+                    <div class="simple-img">
+                        <img src="assets/images/screens.png" alt="">
+                    </div>
                 </div>
                 <!-- /.wrap -->
             </div>
-            <div class="discover clearfix">
+            <!-- /.simple clearfix -->
+            <div class="case-studies clearfix">
                 <div class="wrap">
-                    <div class="discover-content clearfix">
-                        <h2>Discover Browser Extension</h2>
-                        <p>Human rights momentum. World problem solving turmoil, change movements environmental pursue these aspirations initiative donation. Policy dialogue, underprivileged accessibility, asylum visionary, prevention beneficiaries carbon emissions reductions empower.</p>
-                        <div class="discover-button clearfix">
-                            <a href="#" class="button button-download">
-                                <span class="button-download-title">Download for</span>
-                                <span class="button-download-subtitle">Apple iOS</span>
-                            </a>
-                            <a href="#" class="button button-download android">
-                                <span class="button-download-title">Download for</span>
-                                <span class="button-download-subtitle">Android</span>
-                            </a>
+                    <h3>Case Studies</h3>
+                    <div class="case">
+                        <div class="case_wrapper">
+                            <div class="case_info">
+                                <div class="case_info-image">
+                                    <img src="assets/images/jesse.png">
+                                </div>
+                                <div class="case_info-data">
+                                    <p>Jesse, 46</p>
+                                    <p>I live in Los Angeles, USA.</p>
+                                    <br/>
+                                    <p>I work at a <b>newspaper</b>. I write about culture and social issues.</p>
+                                    <br/>
+                                    <p>I think that culture is one of the most beneficial way of addressing social issues.</p>
+                                </div>
+                            </div>
+                            <div class="case_info-content">
+                                <blockquote>We have a video team but it is always busy producing content for our website.</blockquote>
+                                <div class="coloumn coloumn-left">
+                                    <p>I would like to share a detailed analysis about the prison system in California.</p>
+                                </div>
+                                <div class="coloumn coloumn-right">
+                                    <p>The title is <b>Outside Man</b></p>
+                                    </br>
+                                    <ul>
+                                        <p>The key issues of my article are:</p>
+                                        <li>Scott Budnick produced the Hangover movies</li>
+                                        <li>But he is also strongly committed to the California prison reform</li>
+                                        <li>He believes in alternative education programs for young jailed people.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case_visual">
+                            <div class="video-wrapper">
+                                <video  loop>
+                                    <source src="assets/videos/twitter-hangover.mp4" type="video/mp4" />
+                                </video>
+                            </div>
                         </div>
                     </div>
-                    <div class="discover-img">
-                        <div class="discover-img-inside"><img src="upload/discover.png" height="486" width="634" alt=""></div>
+
+                    <div class="case">
+                        <div class="case_wrapper">
+                            <div class="case_info">
+                                <div class="case_info-image">
+                                    <img src="assets/images/leight.png">
+                                </div>
+                                <div class="case_info-data">
+                                    <p>Leight, 28</p>
+                                    <p>I live in Asheville, USA.</p>
+                                    <br/>
+                                    <p>I am a <b>freelance journalist</b>. I write about science.</p>
+                                    <br/>
+                                    <p>I strongly believe that understanding science improves our everyday life.</p>
+                                </div>
+                            </div>
+                            <div class="case_info-content">
+                                <blockquote>I envy my colleagues that are able to produce video reports. It seems that their content has much more visibility and audience response.</blockquote>
+                                <div class="coloumn coloumn-left">
+                                    <p>I’ve written a critical story about the involvement of the US government in the polio vaccination in Pakistan.</p>
+                                </div>
+                                <div class="coloumn coloumn-right">
+                                    <p>The title is <b>How is Polio Still a Thing?</b></p>
+                                    </br>
+                                    <ul>
+                                        <p>The key issues of my article are:</p>
+                                        <li>Why Pakistan is the center of Polio’s comeback</li>
+                                        <li>It would take just two months to completely eradicate it</li>
+                                        <li>How US and CIA are involved in the Polio comeback.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case_visual">
+                            <div class="video-wrapper">
+                                <video  loop>
+                                    <source src="assets/videos/facebook-polio.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="case">
+                        <div class="case_wrapper">
+                            <div class="case_info">
+                                <div class="case_info-image">
+                                    <img src="assets/images/stefano.png">
+                                </div>
+                                <div class="case_info-data">
+                                    <p>Stefano, 40</p>
+                                    <p>I live in Rome, Italy.</p>
+                                    <br/>
+                                    <p>I write for a <b>weekly magazine</b>. I work on reportages.</p>
+                                    <br/>
+                                    <p>I think multi-media reportages are the best combination of words, pictures and videos.</p>
+                                </div>
+                            </div>
+                            <div class="case_info-content">
+                                <blockquote>Our newsroom is really small and we feel the lack of an in-house video team that completes our news offer.</blockquote>
+                                <div class="coloumn coloumn-left">
+                                    <p>I am working on a reportage about the condition of war refugees that are trying to come to Europe via see.</p>
+                                </div>
+                                <div class="coloumn coloumn-right">
+                                    <p>The title is <b>Seimila euro per essere abbandonati in mezzo al mare</b></p>
+                                    </br>
+                                    <ul>
+                                        <p>The key issues of my article are:</p>
+                                        <li>This kind of journey is really expensive and highly dangerous</li>
+                                        <li>Most of the people are from the middle class</li>
+                                        <li>They want to go to Northern Europe</li>
+                                        <li>Turkey is the new departure port of refugees.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case_visual">
+                            <div class="video-wrapper">
+                                <video  loop>
+                                    <source src="assets/videos/twitter-profughi.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case">
+                        <div class="case_wrapper">
+                            <div class="case_info">
+                                <div class="case_info-image">
+                                    <img src="assets/images/graeme.png">
+                                </div>
+                                <div class="case_info-data">
+                                    <p>Graeme, 34</p>
+                                    <p>I live in Washington, USA.</p>
+                                    <br/>
+                                    <p>I work for a liberal <b>newspaper</b>. I write about world news, especially from the Middle East and the Arab world.</p>
+                                    <br/>
+                                    <p>If you want to understand what terrorism, is you must talk and discuss with terrorists</p>
+                                </div>
+                            </div>
+                            <div class="case_info-content">
+                                <blockquote>I have never had the chance to learn how to make a video but I know it would be helpful to engage with younger generations.</blockquote>
+                                <div class="coloumn coloumn-left">
+                                    <p>I am going to release a long-form article about the intentions of the Islamic State.</p>
+                                </div>
+                                <div class="coloumn coloumn-right">
+                                    <p>The title is <b>What ISIS Really Wants</b></p>
+                                    </br>
+                                    <ul>
+                                        <p>The key issues of my article are:</p>
+                                        <li>The Islamic State is no mere collection of psychopaths</li>
+                                        <li>The reality is that the Islamic State is very Islamic</li>
+                                        <li>They want to build a complete society following the example of Muhammad.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case_visual">
+                            <div class="video-wrapper">
+                                <video  loop>
+                                    <source src="assets/videos/instagram-isis.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <!-- /.wrap -->
             </div>
-            <!-- /.discover clearfix -->
-            <!-- /.videos clearfix -->
             <div class="comments clearfix">
                 <div class="wrap">
                     <div class="tab">
                         <div class="box visible">
                             <h4>People talking about #Newsboy</h4>
-                            <p>Join our #WalkandRide adventure. Meet up in London this Saturday! Spread the word and join us for fun.</p>
+                            <p>I had the pleasure to see a preview of #Newsboy and it looks promising</p>
                         </div>
                         <div class="box">
                             <h4>Users loving #Newsboy</h4>
-                            <p>Joining this weekend's #WalkandRide fun! @emmy_lemmy bring your dogs, we can make it a fun walk!</p>
+                            <p>Even if I have no video-skills I was able to create a nice video with #Newsboy for my upcoming article</p>
                         </div>
                         <div class="box">
                             <h4>Folks enjoying #Newsboy</h4>
-                            <p>Nothing to fear, the new #WalkandRide has my tiny street covered, so cool and such a powerful app.</p>
+                            <p>The UI of #Newsboy is simple and functional. I really like the candy-crushy colors</p>
                         </div>
                         <ul class="tabs">
                             <li class="active"></li>
                             <li></li>
                             <li></li>
                         </ul>
-                        <a href="#" class="tab-prev"></a>
-                        <a href="#" class="tab-next"></a>
+                        <a href="#" class="tab-prev">←</a>
+                        <a href="#" class="tab-next">→</a>
                     </div>
                 </div>
                 <!-- /.wrap -->
             </div>
             <!-- /.comments clearfix -->
-            <div class="simple clearfix">
+            <div class="discover clearfix">
                 <div class="wrap">
-                    <div class="simple-content">
-                        <h3>The Simplest UI</h3>
-                        <ul>
-                            <li class="clearfix"><img src="upload/ico1.png" height="32" width="32" alt=""><span>Fastest navigation</span></li>
-                            <li class="clearfix"><img src="upload/ico2.png" height="32" width="32" alt=""><span>Huge number of cities</span></li>
-                            <li class="clearfix"><img src="upload/ico3.png" height="32" width="32" alt=""><span>Only the best routes</span></li>
-                            <li class="clearfix"><img src="upload/ico4.png" height="32" width="32" alt=""><span>Beautiful locations</span></li>
-                            <li class="clearfix"><img src="upload/ico5.png" height="32" width="32" alt=""><span>Cloud sync</span></li>
-                        </ul>
+                    <div class="discover-content clearfix">
+                        <h4>Discover the browser extension</h4>
+                        <p>With the upcoming browser extension you will be able to create your awesome Newsboy directly in the browser. Thanks to a simple drag&drop adding content to your Newsboy has never been so easy.</p>
                     </div>
-                    <div class="simple-img">
-                        <img src="upload/screen.png" height="508" width="587" alt="">
+                    <div class="discover-img">
+                        <div class="discover-img-inside"><video src="assets/videos/newsboy-browser-extension.mp4" autoplay loop></div>
                     </div>
                 </div>
                 <!-- /.wrap -->
             </div>
-            <!-- /.simple clearfix -->
+            <!-- /.discover clearfix -->
             <div class="newsletter clearfix">
                 <div class="wrap">
                     <div class="newsletter-title">Our Newsletter</div>
-                    <div class="newsletter-form clearfix">
-                        <form action="">
-                            <input type="email" placeholder="john@doe.com" class="input-text">
-                            <input type="button" class="button" value="Subscribe">
+                    <div id="mc_embed_signup" class="newsletter-form clearfix">
+                        <form action="//newsboy.us10.list-manage.com/subscribe/post?u=ce354dc4eedc2c0022ed78626&amp;id=50967c3e24" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+                            <div class="mc-field-group">
+                                <input type="email" value="" placeholder="john@doe.com" name="EMAIL" class="required email input-text" id="mce-EMAIL">
+                            </div>
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_ce354dc4eedc2c0022ed78626_50967c3e24" tabindex="-1" value=""></div>
+                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                            </div>
                         </form>
                     </div>
                     <p>If you want to recieve updates from us just pop your email in the box. We think that spam is for jerks. And we are no jerks.</p>
@@ -175,7 +344,7 @@
     <!-- /.main -->
     <footer>
         <div class="wrap">
-            <p>&copy; 2015 <strong>Newsboy</strong>. All Rights Reserved</p>
+            <p>&copy; 2015 <strong>Newsboy</strong>. All Rights Reserved.</p>
             <p>BA Thesis developed at the Faculty of Design and Art of the Free University of Bozen-Bolzano.</p>
         </div>
         <!-- /.wrap -->

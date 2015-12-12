@@ -8,9 +8,6 @@
         font-size: 36px;
         line-height: 48px;
     }
-    .header-img {
-        display: none;
-    }
     .header-wrapper {
         padding-top: 0;
         max-width: none;
@@ -35,11 +32,6 @@
         margin-left: auto;
         margin-right: auto;
         float: none;
-        text-align: center;
-        img {
-            margin-left: auto;
-            margin-right: auto;
-        }
     }
     .simple-content {
         float: none;
@@ -138,19 +130,5 @@
             font-size: 36px;
             line-height: 46px;
         }
-    }
-}
-@media only screen and (-webkit-min-device-pixel-ratio:2),
-only screen and (min--moz-device-pixel-ratio:2),
-only screen and (-o-min-device-pixel-ratio:2/1),
-only screen and (min-device-pixel-ratio:2),
-only screen and (min-resolution:192dpi),
-only screen and (min-resolution:2dppx){
-    %sprite,
-    .comments .tab-prev,
-    .comments .tab-next,
-    .button-download:after {
-      background: url(../images/sprite@2x.png) 0 0 no-repeat;
-      @include bgsize(#{200px 50px});
     }
 }

@@ -1,6 +1,6 @@
 /* footer -------------------------- */
 footer {
-	background: $red;
+	background: $blue;
     color: $white;
     @include font-smooth;
     font-size: 16px;
@@ -8,4 +8,7 @@ footer {
     padding: 90px 0;
     text-align: center;
     @include sizing;
+    p {
+    	line-height: 1.4;
+    }
 }

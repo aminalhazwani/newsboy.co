@@ -2,23 +2,27 @@
 .spanning {
     clear: both;
 }
+
 .newsletter {
-    background: $white;
+    background: $orange;
     padding: 103px 0 109px;
     text-align: center;
     p {
         font-size: 16px;
-        line-height: 28px;
+        line-height: 1.4;
         width: 100%;
         margin: 0 auto;
         clear: both;
-        @include media-query (tabl-and-up) {
+        @include media-query(palm) {
+            margin-top: 80px;
+        }
+        @include media-query(tabl-and-up) {
             max-width: 556px;
         }
     }
 }
 .newsletter-title {
-    font: bold 48px/60px $fontCaption;
+    font: bold 40px/46px $fontCaption;
     letter-spacing: 1px;
     margin-bottom: 38px;
 }
@@ -36,7 +40,6 @@
     @include sizing;
     .button {
         width: 100%;
-        line-height: 58px;
         @include media-query (tabl-and-up) {
             position: absolute;
             right: 0;
@@ -47,9 +50,12 @@
         }
     }
 }
+
 .promo {
     padding: 114px 0 54px;
-    background: $white;
+    background: $blue;
+    color: $white;
+    @include font-smooth;
 }
 .promo-wrapper {
     margin: 0 -15px;
@@ -61,25 +67,32 @@
     width: 25%;
     img {
         display: block;
-        margin-bottom: 23px;
+        margin: 0 auto 23px auto;
     }
     h5 {
         font: bold 18px/24px $fontCaption;
-        text-transform: uppercase;
         margin-bottom: 12px;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+        font-size: 19px;
+        line-height: 1.5;
     }
 }
+
 .simple {
     padding: 104px 0 89px;
+    background: $blue;
+    color: $white;
+    @include font-smooth;
 }
 .simple-content {
     float: right;
     padding-top: 37px;
     width: 420px;
     h3 {
-        font: $f-bold 48px/48px $fontCaption;
-        border-bottom: solid 6px #f4f4f4;
-        padding-bottom: 43px;
+        font: $f-bold 40px/46px $fontCaption;
         margin-bottom: 43px;
     }
     ul {
@@ -87,7 +100,7 @@
         li {
             font-size: 23px;
             line-height: 32px;
-            font-weight: $f-light;
+            font-weight: $f-normal;
             margin-bottom: 31px;
             img {
                 float: left;
@@ -103,15 +116,184 @@
 .simple-img {
     float: left;
     max-width: 587px;
-    width: 53%;
+    width: 50%;
     img {
         display: block;
         margin: 0 auto;
     }
 }
+
+.case-studies {
+    background: $l-grey;
+    color: $blue;
+    padding: 104px 0;
+    font-size: 19px;
+    h3 {
+        font: $f-bold 40px/46px $fontCaption;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    .wrap {
+        padding: 0 36px;
+    }
+}
+
+.case {
+    border-bottom: 3px solid $blue;
+    padding-bottom: 70px;
+    margin-bottom: 60px;
+
+    @include media-query(palm) {
+        max-height: 1700px;
+        overflow: hidden;
+    }
+    @include media-query(tabl-and-up) {
+        overflow: visible;
+    }
+
+    &:last-of-type {
+        @include media-query(tabl-and-up) {
+            border-bottom-color: transparent;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.case_wrapper {
+    overflow: hidden;
+    @include media-query(desk) {
+        width: 60%;
+        margin-right: -4px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.case_info {
+    overflow: hidden;
+    &-image {
+        margin: 0 auto 24px auto;
+        text-align: center;
+        img {
+            width: 140px;
+        }
+        @include media-query(tabl-and-up) {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: -4px;
+            width: 30%;
+            box-sizing: border-box;
+            padding-right: 24px;
+        }
+    }
+
+    &-data {
+        border-top: 1px solid $blue;
+        padding-top: 24px;
+        @include media-query(tabl-and-up) {   
+            padding-top: 0;     
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: -4px;
+            width: calc(69% - 24px);
+            border-top: 0;
+            border-left: 1px solid $blue;
+            padding-left: 24px;
+        }
+    }
+
+
+    &-content {
+        clear: both;
+        margin-top: 48px;
+
+        blockquote {
+            font-size: 30px;
+            line-height: 36px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .coloumn {
+            @include media-query (tabl-and-up) {
+                box-sizing: border-box;
+                float: left;
+            }
+
+            &-left {
+                margin-bottom: 24px;
+                @include media-query (tabl-and-up) {
+                    width: 30%;
+                    padding-right: 24px;
+                }
+            }
+            &-right {
+                @include media-query (tabl-and-up) {
+                    width: 70%;
+                    padding-left: 24px;
+                    border-left: 1px solid $blue;
+                }
+            }
+
+            ul {
+                list-style-type: disc;
+                li {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+
+
+}
+
+.case_visual {
+    text-align: center;
+    margin-top: 20px;
+    @include media-query(tabl-and-up) {
+        margin-top: 40px;
+    }
+    @include media-query(desk) {
+        margin-top: 60px;
+        display: inline-block;
+        vertical-align: middle;
+        width: 40%;
+        margin-top: 0;
+        margin-right: -4px;
+    }
+    .video-wrapper {
+        background-image: url(/assets/images/iphone-frame.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 480px;
+        @include media-query(tabl-and-up) {
+            height: 580px;
+        }
+    }
+    img {
+        margin-top: 76px;
+        height: 328px;
+        @include media-query(tabl-and-up) {
+            margin-top: 91px;
+            height: 398px;
+        }
+    }
+    video {
+        margin-top: 76px;
+        height: 328px;
+        @include media-query(tabl-and-up) {
+            margin-top: 91px;
+            height: 398px;
+        }
+    }
+}
+
 .comments {
-    background: $red;
-    color: $white;
+    background: $orange;
+    color: $blue;
+    @include font-smooth;
     text-align: center;
     padding: 70px 0 60px;
     .box {
@@ -121,7 +303,7 @@
             display: block;
         }
         h4 {
-            font: $f-medium 36px/46px $fontCaption;
+            font: $f-bold 40px/46px $fontCaption;
             margin-bottom: 37px;
             a {
                 font-weight: bold;
@@ -134,7 +316,7 @@
         p {
             font-size: 19px;
             line-height: 32px;
-            font-weight: $f-light;
+            font-weight: $f-normal;
         }
     }
     .tabs {
@@ -171,8 +353,9 @@
         top: 94px;
         width: 23px;
         height: 16px;
-        @extend %sprite;
-        background-position: 0 0;
+        color: $white;
+        font-family: 'Helvetica';
+        font-size: x-large;
         @include opacity(0.5);
         &:hover {
             @include opacity(1);
@@ -181,85 +364,52 @@
     .tab-next {
         left: auto;
         right: 98px;
-        background-position: -50px 0;
     }
 }
+
 .video-title {
-    font: bold 48px/48px $fontCaption;
+    font: bold 40px/48px $fontCaption;
     text-align: center;
     margin-bottom: 25px;
 }
 .video-subtitle {
     font-size: 19px;
     line-height: 25px;
-    color: #919191;
+    color: $blue;
     text-align: center;
 }
 .video {
-    padding: 108px 0 116px;
+    padding: 108px 0;
 }
 .video-block {
     padding-top: 34px;
     margin: 0 auto 32px;
-    max-width: 760px;
+    video {
+        width: 100%;
+        padding: 12px;
+        box-sizing: border-box;
+        border: 2px solid $blue;
+        @include media-query(lap-and-up) {
+            max-width: 80%;
+            margin-left: 10%;  
+        }
+    }
 }
 .video-share-wrapper {
     clear: both;
     text-align: center;
 }
-.social-list {
-    display: inline-block;
-    li {
-        font-size: 19px;
-        line-height: 38px;
-        float: left;
-        margin: 0 9px;
-        a {
-            font-size: 15px;
-            line-height: 38px;
-            display: block;
-            width: 160px;
-            height: 38px;
-            @include border-radius(3px);
-            background-color: #3bcbff;
-            color: $white;
-            text-align: center;
-            @include transition(#{color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear});
-            &:hover {
-                background-color: lighten(#3bcbff, 10%);
-            }
-            &:active {
-                background-color: darken(#3bcbff, 10%);
-            }
-            &.social-facebook {
-                background-color: #1e3aa6;
-                &:hover {
-                    background-color: lighten(#1e3aa6, 10%);
-                }
-                &:active {
-                    background-color: darken(#1e3aa6, 10%);
-                }
-            }
-            &.social-google {
-                background-color: #d72d26;
-                &:hover {
-                    background-color: lighten(#d72d26, 10%);
-                }
-                &:active {
-                    background-color: darken(#d72d26, 10%);
-                }
-            }
-        }
-    }
-}
+
 .discover {
-    padding: 31px 0 25px;
-    background: #fafafa;
+    padding: 104px 0;
+    background: $l-grey;
 }
 .discover-content {
-    float: right;
-    width: 50%;
-    padding: 77px 97px 50px 15px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+    padding-right: 30px;
+    margin-bottom: 36px;
     @include sizing;
     h2 {
         font-size: 72px;
@@ -267,59 +417,35 @@
         font-weight: bold;
         margin-bottom: 29px;
     }
-}
-.discover-button {
-    padding-top: 68px;
-    margin: 0 -10px;
-    clear: both;
-}
-.button-download {
-    height: 62px;
-    float: left;
-    font: $f-medium 11px/13px $fontCaption;
-    padding-left: 61px;
-    padding-right: 0;
-    width: 180px;
-    text-align: left;
-    margin: 0 10px 20px;
-    position: relative;
-    @include sizing;
-    &:after {
-        content: "";
-        position: absolute;
-        left: 23px;
-        top: 14px;
-        width: 32px;
-        height: 32px;
-        @extend %sprite;
-        background-position: -100px 0;
+    h4 {
+        font: 700 40px/40px $fontCaption;
+        margin-bottom: 25px;
     }
-    &.android {
-        &:after {
-            background-position: -150px 0;
-        }
+    p {
+        font-size: 19px;
+        line-height: 1.5;
     }
-}
-.button-download-title {
-    padding: 11px 0 1px;
-    display: block;
-    font-size: 11px;
-    line-height: 13px;
-    text-align: left;
-}
-.button-download-subtitle {
-    display: block;
-    font-size: 21px;
-    line-height: 23px;
-    text-align: left;
+    @include media-query(desk) {
+        margin-bottom: 0;
+    }
 }
 .discover-img {
-    float: left;
-    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    width: 69%;
     img {
         display: block;
     }
 }
 .discover-img-inside {
-    margin: 0 -40px;
+    max-width: 90%;
+    margin: 0 auto;
+    @include media-query(desk) {
+        max-width: 100%;
+    }
+    video {
+        width: 100%;
+        height: 100%;
+        box-shadow: 1px 2px 10px rgba(0,0,0,0.5);
+    }
 }
